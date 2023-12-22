@@ -6,7 +6,15 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils";
 
 const About = () => {
-	return <div>About</div>;
+	return (
+		<>
+			<motion.div variants={textVariant()}>
+				<p className={styles.sectionSubText}>Introduction</p>
+				<h2 className={styles.sectionHeadText}>Overview</h2>
+			</motion.div>
+			<motion.p variants={fadeIn("", "", 0.1, 1)}></motion.p>
+		</>
+	);
 };
 
 export default About;
